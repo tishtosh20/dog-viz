@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who's a Good Name?</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Modak&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <h1>WHO'S A GOOD NAME?</h1>
+    <p>Can you guess NYC's five most popular dog names?</p>
+
+    <div class="chart-container">
+      <canvas id="dogChart"></canvas>
+    </div>
+
+    <p>Pick a name, then click the bar where you think it belongs.</p>
+
+    <div id="nameBank"></div>
+
+    <div class="controls">
+      <button id="checkAnswers">CHECK ANSWERS</button>
+      <button id="resetGame">PLAY AGAIN</button>
+    </div>
+
+    <h2 id="result"></h2>
+
+    <section class="polar-section">
+      <h2>THE TOP 20 DAWGS</h2>
+      <p>
+        Curious about the rest? Here are NYC's 20 most popular dog names
+        according to dog licensing records!
+      </p>
+
+      <div class="polar-container">
+        <canvas id="polarChart"></canvas>
+      </div>
+    </section>
+
+    <h3>
+      PS: The websites in yellow and blue because those are the colors dogs can
+      see! (show your dawg this)
+    </h3>
+
+    <script src="chart.js"></script>
+  </body>
+</html>
